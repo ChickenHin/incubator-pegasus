@@ -18,15 +18,15 @@
 name: BuildCompilationEnvDocker - build and publish multi compilation OS env
 
 on:
-  push:
-    branches:
-      - master
-      - 'v[0-9]+.*' # release branch
-      - ci-test # testing branch for github action
-      - '*dev' # developing branch
-    paths:
-      - 'docker/pegasus-build-env/**'
-      - '.github/workflows/build-push-env-docker.yml'
+  # push:
+  #   branches:
+  #     - master
+  #     - 'v[0-9]+.*' # release branch
+  #     - ci-test # testing branch for github action
+  #     - '*dev' # developing branch
+  #   paths:
+  #     - 'docker/pegasus-build-env/**'
+  #     - '.github/workflows/build-push-env-docker.yml'
 
   # for manually triggering workflow
   workflow_dispatch:
